@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    
+
+    <span class="d-none" id="username"></span>
+
+
+    <div class="container mt-5 mx-auto shadow-lg p-4 ">
+        <div class="row">
+            <div class="col-sm-12  d-flex justify-content-center align-items-center flex-column">
+                <h1 class="my-4">Smart Login System</h1>
+
+
+
+
+                <input oninput="validateName()"  id="signUpName"    type="text" placeholder="Enter Your Name" class="my-2 p-2 rounded-2 text-white  bg-transparent border-white w-100 form-control ">
+                <p id="alert-name" class="text-danger w-100 text-center py-3 d-none"> Name must contain at least 3 characters .</p>
+
+
+
+
+                <input oninput="validateEmail()" id="signUpEmail"  type="text" placeholder="Enter Your Email" class="my-2 p-2 rounded-2 text-white   bg-transparent border-white w-100 form-control ">
+                <p id="alert-email" class="text-danger w-100 text-center d-none"> Email must be valid</p>
+
+
+
+
+                <input oninput="validatePass()" id="signUpPassword"   type="password" placeholder="Enter Your Password" class="my-2 p-2 text-white  rounded-2 bg-transparent border-white w-100 form-control ">
+<p id="signUpPasswordAlert" class="text-danger d-none"> Password must contain at least one uppercase letter, one special character, one digit, and must be at least 8 characters long.</p>
+
+
+                <p id="alert-empty" class="text-danger w-100 text-center  d-none"> ALL Inputs is required</p>
+
+
+                <p id="alert-success" class="text-success w-100 text-center d-none"> success</p>
+                <p id="alert-repeat" class="text-danger  w-100 text-center d-none"> Your Email already exists</p>
+
+
+                <button id="signUpBtn" class="btn btn-outline-info my-3 w-100 ">SignUp</button>
+
+
+
+                <p class="text-white my-3">  You have an account?  <a id="signInButton" href="index.html" class="text-white text-decoration-underline">signIn</a></p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

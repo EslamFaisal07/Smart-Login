@@ -1,0 +1,33 @@
+body{
+    background-color: #24353F;
+    font-family: "Titillium Web", sans-serif;
+}
+.container{
+    background-color: #24353F;
+    width: 50%;
+
+}
+
+::-webkit-input-placeholder
+{
+    color: #aaa !important;
+}
+h1{
+    color: #17A2B8;
+}
+.content{
+    margin-top: 16%;
+}
+
+
+@media(max-width:992px){
+
+    .container{
+      
+        width: 100%;
+    
+    }
+
+
+
+}
